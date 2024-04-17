@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-compatible" content="IE=egde">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c425e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()">close</i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                <P>Web Designer</P>
+                <h1>My name is <span> Binesh Maharana</span><br>i live in Odisha, India. </h1>
+                
+             </div>
+             <div>
+                <a href="Data/BINESH_Official_Resume.docx" download class="btn btn2">Download Resume</a>
+             </div>
+          </div>
+    </div>
+
+    <!---------------------------about---------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title"> About Me</h1>
+                        <P> I am a front-end web developer. I can provide clean code and pixel-perfect design.
+                            I also make the website more & more interactive with web animations. A responsive 
+                            design makes your website accessible to all users, regardless of their device.
+                        </P>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!----------------------------skills------------------>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title" align="center"> Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class=""></i>
+                    <h2>Web Design</h2>
+                    <p>I have a little bit of knowledge about Web Development programs.
+                       </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Java Programming</h2>
+                    <p>I know about Java Programming language and it's use.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>SQL Database Management</h2>
+                    <p>I can also manage SQL Database Management Systems.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Microsoft Office</h2>
+                    <p>I completed my Microsoft Office in Covid-19 time.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+    <!-------------------------education---------------->
+    <div id="education">
+        <div class="container">
+            <h1 class="sub-title" align="center"> Education</h1>
+            <div class="education-list">
+                <div>
+                    <i class=""></i>
+                    <h2>Matriculation</h2>
+                    <p>Sri Jhadeswar High School, Jhadeswar, Ganjam. <br> Passed Year February 2017.
+                       </p>
+                    
+                </div>
+                <div>
+                    <h2>Higher Secondary Education</h2>
+                    <p> Tara Tarini H S School, Purusottampur. Stream-Science <br>  Passed Year March 2019</p>
+
+                    
+                    <br>
+                    
+                </div>
+                <div>
+                    <h2>Graduation</h2>
+                    <p>Scinece College (AUTONOMOUS). BCA Honours, <br> Passed Year  Mar 2022</p>
+                    
+                </div>
+                <div>
+                    <h2>Master</h2>
+                    <p>National Institute Of Science And Technology(NIST), Berhampur <br> To be continued </p>
+                    <a href="#">Learn More</a>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+
+   
+<!----------------contact-------------------------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">contact me</h1>
+              <p> email:-bineshmaharana295@gmail.com</p>
+              <P> phone number:-8456982334</P>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                <a href="https://www.linkedin.com/in/binesh-maharana-06815b253/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope fa-xl"></i></a>
+                <a href="#"><i class="fa-solid fa-phone fa-xl"></i></a>
+
+              </div>  
+              <a href="Data/BINESH_Official_Resume.docx" download class="btn btn2">Download Resume</a>
+            </div>
+          
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p> Copyright<i class="fa-solid fa-copyright fa-lg" style="color: #ffffff;"></i>Binesh</p>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+    <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("table-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+                        }
+
+    </script>
+      
+
+    <script>
+        var sidemeu = document.getElementByid("sidemenu");
+
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+
+
+    </script>
+    </body>
+    </html>
